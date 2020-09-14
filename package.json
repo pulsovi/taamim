@@ -1,0 +1,10 @@
+{
+  "name": "taamim",
+  "version": "1.0.0",
+  "description": "A web UI to learning taamim",
+  "main": "index.js",
+  "repository": "git@github.com:pulsovi/taamim.git",
+  "author": "David GABISON <david.gabison@outlook.com>",
+  "license": "MIT",
+  "private": true
+}

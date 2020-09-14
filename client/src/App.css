@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "ShlomoSemiStam";
+  src: url("/fonts/ShlomosemiStam.ttf") format("ttf");
+}
+@font-face {
+  font-family: "ShlomoBold";
+  src: url("/fonts/ShlomoBold.ttf") format("ttf");
+}
+
+.taam {
+	font-family: "ShlomoBold";
+	border: solid black 2px;
+	margin: 1em;
+	display: block;
+}
+
+.face {
+	padding: 0 0.2em 0.2em;
+	margin: 0;
+	font-size: 3em;
+}
