@@ -5,11 +5,7 @@ import propTypes from "prop-types";
  */
 export default function Taam({ taam }) {
   return <div className="taam" onClick={() => handleClick()} dir="rtl" >
-    {
-      taam.display ?
-      <p className="face">{taam.display}</p> :
-      <img src={`../taamim/${taam.name}.png`} alt={taam.name} />
-    }
+    <p className="face">{taam.display}</p>
     <audio id={`${taam.name}_audio`}src={`../taamim/${taam.name}.ogg`} />
   </div>;
 
