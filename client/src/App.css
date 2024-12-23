@@ -6,9 +6,13 @@
   font-family: "ShlomoBold";
   src: url("/fonts/ShlomoBold.ttf") format("ttf");
 }
+@font-face {
+  font-family: "Shlomo";
+  src: url("/fonts/Shlomo.ttf") format("ttf");
+}
 
 .taam {
-	font-family: "ShlomoBold";
+	font-family: "Shlomo";
 	border: solid black 2px;
 	margin: 1em;
 	display: block;
