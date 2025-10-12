@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    textarea {
+      width: 100%;
+      height: 30vh;
+      font-size: 3em;
+    }
+    pre {
+      white-space: pre-wrap;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <textarea></textarea>
+  <pre></pre>
+  <script type="application/javascript">
+    const textarea = document.querySelector("textarea");
+    const pre = document.querySelector("pre");
+    textarea.addEventListener("keyup", update);
+    textarea.addEventListener("mouseup", update);
+    function update() {
+      console.log("update");
+      const text = textarea.value;
+      console.log({text});
+      const output = [];
+      Array.from(text).forEach(letter => output.push("\\u0" + letter.charCodeAt().toString(16)));
+      console.log({output});
+      pre.innerHTML = '"' + output.join("") + '"';
+    }
+  </script>
+</body>
+</html>
